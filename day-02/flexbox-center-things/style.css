@@ -4,12 +4,12 @@
 }
 body {
     font-family: sans-serif;
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
     height: 100vh;
 }
 
 main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     height: 100%;
