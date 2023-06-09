@@ -11,11 +11,29 @@ body {
 .container {
     background-color: rgb(103, 103, 165);
     color: white;
-    border: 2px solid red;
+    border: 10px solid red;
     max-width: 800px;
     display: grid;
+    gap: 1rem;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-auto-flow: row; */
+    /* grid-template-rows: 300px 300px; */
+    /* grid-auto-rows: 100px; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 200px repeat(2, 1fr); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* column-gap: 1rem; */
+    /* row-gap: 1rem; */
+    /* gap: 2rem 1rem; */
+    /* grid-template-columns: repeat(auto-fit, 200px); */
+    /* variable number of columns  */
+
+    /* variable number of columns and size  */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .item {
     padding: 0.5rem;
+    border: 2px solid white;
 }
