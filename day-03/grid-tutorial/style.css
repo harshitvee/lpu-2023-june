@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: rgb(103, 103, 165);
+    color: white;
+    border: 2px solid red;
+    max-width: 800px;
+    display: grid;
+}
+
+.item {
+    padding: 0.5rem;
+}
