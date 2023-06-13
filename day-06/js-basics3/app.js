@@ -273,9 +273,9 @@
 // 3. arrow functions
 
 // ~~~~~~~~~~~~~ function declaration ~~~~~~~~~~~~~~
-function greeting(username) {
-    return `hello ${username}`;
-}
+// function greeting(username) {
+//     return `hello ${username}`;
+// }
 
 // ~~~~~~~~~` function expression ~~~~~~~~~~~~~~`
 
@@ -284,6 +284,8 @@ function greeting(username) {
 const greeting2 = function (username) {
     return `hello ${username}`;
 };
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Day 06 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 // ~~~~~~~~~~~~~~` arrow function ~~~~~~~~~~~~~~~~~~~~`
 
@@ -299,7 +301,149 @@ const greeting4 = (username) => `hello ${username}`;
 
 const greeting5 = username => `hello ${username}`;
 
-const sum = (num1, num2) => num1 + num2;
+// const sum = (num1, num2) => num1 + num2;
 
-const ans = sum(4,5);
-console.log(ans);
+// const ans = sum(4,5);
+// console.log(ans);
+
+
+// pass functions as parameters 
+
+
+// function greeting(username) {
+//     return `hello ${username}`;
+// }
+
+
+// function myFunc(callback) {
+//     console.log(callback);
+// }
+
+// myFunc(greeting)
+
+
+
+// return functions from functions 
+
+// function myFunc() {
+//     return function() {
+//         console.log("hello from returned function ")
+//     }
+// }
+
+// const returnedValue = myFunc()
+// returnedValue();
+
+
+// procedural programming
+// object oriented programming
+// functional programming 
+
+
+
+// lexical scope 
+
+
+
+// function app() {
+//     function func1() {
+//         console.log("hello from func1")
+//     }
+
+//     function sum() {
+//         console.log("hello from sum function");
+//     }
+    
+//     return [func1, sum];
+    
+// }
+
+// const [func1, sum] = app();
+
+
+
+// const myVariable = 97;
+
+// function app() {
+//     // const myVariable = 89;
+//     function insideFunction() {
+//         // const myVariable = 23;
+//         console.log(myVariable)
+//     }
+//     insideFunction()
+// }
+
+// app();
+
+// closure : very important interview question
+
+// function app(x,y) {
+//     const var1 = "variable 1";
+//     const var2 = "variable 2";
+
+//     return function(a,b) {
+//         console.log(x);
+//         console.log(y);
+//         console.log(var1);
+//         console.log(var2);
+//         console.log(a);
+//         console.log(b);
+//     }
+// }
+
+// const returnedFunction = app("xVal", "yVal");
+// returnedFunction("valA", "valB");
+
+
+// higher order functions 
+
+// map function 
+
+// const nums = [1,2,3,4];
+// const squares = [1,4,9,16]
+
+
+// normal iteration
+
+// const squares = [];
+
+// for(let num of nums) {
+//     squares.push(num**2);
+// }
+
+// console.log(squares);
+
+
+const nums = [1,2,3,4];
+
+
+
+// map method --- > array method 
+// map function always return array 
+
+const squares = nums.map(function(num) {
+    return num ** 2;
+});
+
+// const cubes = nums.map((num) => {
+//     return num ** 3;
+// });
+
+// you can access index too 
+
+// const cubes = nums.map((num, index) => {
+//     return num**3;
+// });
+
+// if you are using arrow function 
+// you can avoid paranthesis if there is one param only
+
+// const cubes = nums.map(num => {
+//     return num**3;
+// })
+
+// if you are using arrow function you can use implicit return
+
+const cubes = nums.map(num => num ** 3);
+
+console.log(cubes);
