@@ -134,7 +134,7 @@
 
 // how to iterate arrays
 
-const fruits = ["apple", "mango", "grapes"];
+// const fruits = ["apple", "mango", "grapes"];
 
 // for (let i = 0; i < fruits.length; i++) {
 //     console.log(fruits[i]);
@@ -145,3 +145,151 @@ const fruits = ["apple", "mango", "grapes"];
 // for (let abc of fruits) {
 //     console.log(abc);
 // }
+
+// for in loop
+
+// for (let index in fruits) {
+//     console.log(index);
+// }
+
+// object
+
+// const userData = {
+//     firstName: "Harshit",
+//     lastName: "Vashisth",
+//     gender: "Male",
+//     age: 8,
+//     hobbies: ["Guitar", "Swimming"],
+//     "some key": "some value",
+// };
+
+// console.log(userData.hobbies[0]);
+// access keys
+
+// console.log(userData.gender);
+
+// dot notation
+
+// bracket notation
+
+// console.log(userData["some key"]);
+// console.log(userData["hobbies"]);
+
+// how to iterate in object
+
+// for in loop
+
+// for (let key in userData) {
+//     // console.log(key);
+//     // console.log(userData[key]);
+//     // const ans = "key : " + key + " , " + "value : " + userData[key];
+//     const ans = `key: ${key}, value: ${userData[key]}`;
+//     console.log(ans);
+// }
+
+// spread operator
+// clone an array
+// clone an object
+
+// array destructuring
+// object destructuring
+
+// const array1 = [1, 2, 3];
+// const array2 = [...array1, "array 2 unique item"];
+
+// console.log(array1);
+// console.log(array2);
+
+// object , array  --- > reference types
+
+// stack
+
+// userData : 0x123456
+// userData2 : 0x123456
+
+// ~~~~~~~~~~~~~~~~~~~~~~` heap  ~~~~~~~~~~~~~~~~~`
+
+// 0x123456 = {
+//     firstName: "Harshit",
+//     lastName: "Vashisth",
+//     gender: "Male",
+//     age: 8,
+//     hobbies: ["Guitar", "Swimming"],
+// };
+
+// 0x123457  = {
+//         firstName: "Harshit",
+//     lastName: "Vashisth",
+//     gender: "Male",
+//     age: 8,
+//     hobbies: ["Guitar", "Swimming"],
+// };
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// const userData1 = {
+//     firstName: "Harshit",
+//     lastName: "Vashisth",
+//     gender: "Male",
+//     age: 8,
+//     hobbies: ["Guitar", "Swimming"],
+// };
+
+// const newUserData = {
+//     ...userData1,
+//     firstName: "Jane",
+//     gender: "female",
+//     occupation: "music teacher",
+// };
+
+// console.log(newUserData);
+
+// const array1 = ["item 1", "item 2", "item3", "item4"];
+
+// let [myVar1, myVar2, ...restitems] = array1;
+
+// console.log(myVar1);
+// console.log(myVar2);
+// console.log(restitems);
+
+// const userData1 = {
+//     firstName: "Harshit",
+//     lastName: "Vashisth",
+//     gender: "Male",
+//     age: 8,
+//     hobbies: ["Guitar", "Swimming"],
+// };
+
+// const { firstName: fName, lastName } = userData1;
+
+// console.log(fName);
+
+// functions
+
+// 1. function declaration
+
+// 2. function expression
+
+// 3. arrow functions
+
+// ~~~~~~~~~~~~~ function declaration ~~~~~~~~~~~~~~
+function greeting(username) {
+    return `hello ${username}`;
+}
+
+// ~~~~~~~~~` function expression ~~~~~~~~~~~~~~`
+
+// you can store function inside variable
+
+const greeting2 = function (username) {
+    return `hello ${username}`;
+};
+
+// ~~~~~~~~~~~~~~` arrow function ~~~~~~~~~~~~~~~~~~~~`
+
+const greeting3 = (username) => {
+    return `hello ${username}`;
+};
+
+const ans = greeting3("John");
+console.log(ans);
