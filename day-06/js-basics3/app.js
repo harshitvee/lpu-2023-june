@@ -414,16 +414,16 @@ const greeting5 = username => `hello ${username}`;
 // console.log(squares);
 
 
-const nums = [1,2,3,4];
+// const nums = [1,2,3,4];
 
 
 
 // map method --- > array method 
 // map function always return array 
 
-const squares = nums.map(function(num) {
-    return num ** 2;
-});
+// const squares = nums.map(function(num) {
+//     return num ** 2;
+// });
 
 // const cubes = nums.map((num) => {
 //     return num ** 3;
@@ -444,6 +444,92 @@ const squares = nums.map(function(num) {
 
 // if you are using arrow function you can use implicit return
 
-const cubes = nums.map(num => num ** 3);
+// const cubes = nums.map(num => num ** 3);
 
-console.log(cubes);
+// console.log(cubes);
+
+
+// const todos = [
+//     {
+//         id: 1,
+//         title: "Teach React to students",
+//         completed: true
+//     },
+//     {
+//         id: 2,
+//         title: "Breakfast",
+//         completed: false
+//     },{
+//         id: 1,
+//         title: "Go to bank",
+//         completed: false
+//     }
+// ]
+
+// const titles = todos.map(function(todo) {
+//     return todo.title;
+// })
+
+
+// const titles = todos.map((todo) => {
+//     return todo.title;
+// })
+
+
+// avoid paranthesis because there is only one parameter
+
+// const titles = todos.map(todo => {
+//     return todo.title;
+// })
+
+// you can use implicit return also in arrow functions
+// const titles = todos.map(todo => todo.title)
+
+// const titles = todos.map(todo => todo.title);
+// console.log(titles);
+
+
+const todos = [
+    {
+        id: 1,
+        title: "Teach React to students",
+        completed: true
+    },
+    {
+        id: 2,
+        title: "Breakfast",
+        completed: false
+    },{
+        id: 1,
+        title: "Go to bank",
+        completed: false
+    }
+]
+
+
+// const updatedTodos = [
+//     {
+//         id: 1,
+//         title: "Teach React to students",
+//         completed: false
+//     },
+//     {
+//         id: 2,
+//         title: "Breakfast",
+//         completed: true
+//     },{
+//         id: 1,
+//         title: "Go to bank",
+//         completed: true
+//     }
+// ]
+
+// use map 
+
+const updatedTodos = todos.map(todo => {
+    return {
+        ...todo , completed : !todo.completed
+    }
+})
+
+console.log(updatedTodos);
