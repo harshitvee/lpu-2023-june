@@ -135,4 +135,8 @@
 
 // for, for of, forEach
 
-// async javascript
+// async javascript (browser provides functionality for async js)
+
+// javascript itself is single threaded synchronous programming language
+
+// setTimeout ---> browser provides setTimeout function
