@@ -11,13 +11,18 @@ const rootElement = document.getElementById("root");
 
 // use className instead of class in react
 
-const h1Element = React.createElement(
-    "h1",
-    {
-        className: "heading",
-    },
-    "First React Application"
-);
+// const h1Element = React.createElement(
+//     "h1",
+//     {
+//         className: "heading",
+//     },
+//     "First React Application"
+// );
+
+// jsx
+
+const h1Element = <h1 className="heading">Heading</h1>;
+
 ReactDOM.createRoot(rootElement).render(h1Element);
 
 console.log(h1Element);
