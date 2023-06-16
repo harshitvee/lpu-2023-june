@@ -1,11 +1,11 @@
 import Greeting from "./Greeting";
-import Navbar from "./Navbar";
 
 function App() {
     return (
         <>
-            <Greeting />
-            <Navbar />
+            <Greeting firstName="Harshit" lastName="vashisth" />
+            <Greeting firstName="John" lastName="Sharma" />
+            <Greeting firstName="Jane" lastName="Doe" />
         </>
     );
 }

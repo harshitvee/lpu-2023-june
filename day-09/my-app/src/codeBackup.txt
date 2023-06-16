@@ -26,3 +26,32 @@ function App() {
         </React.Fragment>
     );
 }
+
+
+-------------- props ------------------------ 
+
+function Greeting(properites) {
+    return (
+        <h1>
+            Good Morning, {properites.firstName} {properites.lastName}
+        </h1>
+    );
+}
+
+
+--------------- inline styles -----------------
+
+
+function Greeting({ firstName, lastName }) {
+    return (
+        <h1
+            style={{
+                backgroundColor: "#9fccce",
+                padding: "1rem",
+                fontFamily: "sans-serif",
+            }}
+        >
+            Good Morning, {firstName} {lastName}
+        </h1>
+    );
+}
