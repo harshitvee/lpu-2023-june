@@ -21,8 +21,20 @@ const rootElement = document.getElementById("root");
 
 // jsx
 
-const h1Element = <h1 className="heading">Heading</h1>;
+// const h1Element = <h1 className="heading">Heading</h1>;
 
-ReactDOM.createRoot(rootElement).render(h1Element);
+// react components are javascript functions
 
-console.log(h1Element);
+// function declaration, function express, arrow function
+
+// IMPORTANT RULE : component / function's first letter should always capital.
+
+// first react component
+function H1Element() {
+    return <h1 className="heading">MY Heading</h1>;
+}
+
+// ReactDOM.createRoot(rootElement).render(<H1Element> </H1Element>);
+ReactDOM.createRoot(rootElement).render(<H1Element />);
+
+// console.log(h1Element);
