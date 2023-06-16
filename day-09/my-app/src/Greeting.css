@@ -1,5 +1,17 @@
-.greetingsHeading {
+/* .greetingsHeading {
     background-color: #9fccce;
+    padding: 1rem;
+    font-family: "sans-serif";
+} */
+
+.jClass {
+    background-color: #9fccce;
+    padding: 1rem;
+    font-family: "sans-serif";
+}
+
+.otherClass {
+    background-color: #b3ce9f;
     padding: 1rem;
     font-family: "sans-serif";
 }

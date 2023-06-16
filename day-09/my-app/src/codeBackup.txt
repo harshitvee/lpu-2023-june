@@ -55,3 +55,30 @@ function Greeting({ firstName, lastName }) {
         </h1>
     );
 }
+
+---- use external css -------------- 
+
+function Greeting({ firstName, lastName }) {
+    return (
+        <h1 className="greetingsHeading">
+            Good Morning, {firstName} {lastName}
+        </h1>
+    );
+}
+
+
+------------- conditional classes using if else --------------
+
+function Greeting({ firstName, lastName }) {
+    let classNameValue = "";
+    if (firstName[0] === "J") {
+        classNameValue = "JClass";
+    } else {
+        classNameValue = "otherClass";
+    }
+    return (
+        <h1 className={classNameValue}>
+            Good Morning, {firstName} {lastName}
+        </h1>
+    );
+}

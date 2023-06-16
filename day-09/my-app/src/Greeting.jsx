@@ -8,7 +8,7 @@ import "./Greeting.css";
 
 function Greeting({ firstName, lastName }) {
     return (
-        <h1 className="greetingsHeading">
+        <h1 className={firstName[0] === "J" ? "jClass" : "otherClass"}>
             Good Morning, {firstName} {lastName}
         </h1>
     );
