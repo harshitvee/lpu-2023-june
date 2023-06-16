@@ -13,3 +13,16 @@ export { App2 };
 // 1.  you can export default only one thing from 1 file
 // 2. you can import default export thing (App in our case) with any name
 export default App;
+
+
+---------------- fragment ------------------------
+
+function App() {
+    return (
+        <React.Fragment>
+            <Greeting />
+            <Navbar />
+         
+        </React.Fragment>
+    );
+}
