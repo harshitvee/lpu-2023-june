@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Todo from "./Todo";
+import AddTodoForm from "./AddTodoForm";
 
 function App() {
     const [todos, setTodos] = useState([
@@ -37,9 +38,14 @@ function App() {
         });
     }
 
+    function addTodo(newTodo) {
+        setTodos((prevTodos) => [...prevTodos, newTodo]);
+    }
+
     return (
         <div className="TodoApp">
             <h1>Todo App</h1>
+            <AddTodoForm addTodo={addTodo} />
             {todos.map((todo) => {
                 return (
                     <Todo
