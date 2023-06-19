@@ -3,7 +3,7 @@ function Todo({ title, completed, deleteTodo, toggleCompleted, id }) {
     return (
         <div className={styles.todo}>
             <h2 className={completed ? styles.completed : null}>{title}</h2>
-            <div className="buttonWrapper">
+            <div className={styles.buttonWrapper}>
                 <button
                     className="delete"
                     onClick={() => {

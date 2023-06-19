@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
+import styles from "./AddTodoForm.module.css";
 function AddTodoForm({ addTodo }) {
     const [todoTitle, setTodoTitle] = useState("");
     const handleSubmit = (e) => {
@@ -13,7 +14,7 @@ function AddTodoForm({ addTodo }) {
         setTodoTitle("");
     };
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.todoForm}>
             <input
                 type="text"
                 name="todoTitle"

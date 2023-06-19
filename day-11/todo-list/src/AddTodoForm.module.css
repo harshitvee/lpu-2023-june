@@ -1,0 +1,21 @@
+.todoForm {
+    /* border: 2px solid lightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoForm input {
+    /* border: 2px solid yellow; */
+    /* width: 100%; */
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.todoForm button {
+    width: 20%;
+    border-radius: 1rem;
+}

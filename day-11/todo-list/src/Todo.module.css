@@ -1,11 +1,23 @@
 .todo {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    background-color: rgb(61, 60, 60);
     border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0 1rem;
+    /* margin: 0 1rem; */
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .completed {
     text-decoration: line-through;
     opacity: 0.6;
+}
+.buttonWrapper {
+    display: flex;
+    gap: 1rem;
+}
+.buttonWrapper button {
+    width: 100px;
 }
