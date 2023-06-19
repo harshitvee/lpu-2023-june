@@ -1,9 +1,10 @@
-import CounterApp from "./CounterApp";
+// import CounterApp from "./CounterApp";
+import LoginForm from "./LoginForm";
 import "./App.css";
 function App() {
     return (
         <>
-            <CounterApp />
+            <LoginForm />
         </>
     );
 }
