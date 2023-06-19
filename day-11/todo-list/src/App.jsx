@@ -42,11 +42,14 @@ function App() {
         setTodos((prevTodos) => [...prevTodos, newTodo]);
     }
 
+    function clearAll() {
+        setTodos([]);
+    }
     return (
         <div className="TodoApp">
             <h1>Todo App</h1>
             <AddTodoForm addTodo={addTodo} />
-            {todos.map((todo) => {
+            {/* {todos.map((todo) => {
                 return (
                     <Todo
                         key={todo.id}
@@ -57,7 +60,19 @@ function App() {
                         toggleCompleted={toggleCompleted}
                     />
                 );
+            })} */}
+
+            {todos.map((todo) => {
+                return (
+                    <Todo
+                        key={todo.id}
+                        {...todo}
+                        deleteTodo={deleteTodo}
+                        toggleCompleted={toggleCompleted}
+                    />
+                );
             })}
+            {todos.length > 0 && <button onClick={clearAll}>Clear All</button>}
         </div>
     );
 }
