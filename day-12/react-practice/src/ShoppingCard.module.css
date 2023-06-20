@@ -1,0 +1,14 @@
+.shoppingCard {
+    /* border: 2px solid red; */
+    max-width: 500px;
+    background-color: rgb(226, 227, 227);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.productWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.shoppingCard img {
+    border-radius: 1rem;
+}
