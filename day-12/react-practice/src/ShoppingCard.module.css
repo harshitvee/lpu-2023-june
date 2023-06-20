@@ -7,8 +7,12 @@
 }
 .productWrapper {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
 .shoppingCard img {
     border-radius: 1rem;
+    width: 186px;
+    height: 116px;
+    object-fit: contain;
 }
