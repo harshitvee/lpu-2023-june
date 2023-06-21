@@ -1,7 +1,8 @@
 import "./App.css";
 
 // import LearningUseEffect from "./LearningUseEffect";
-import FetchData from "./FetchData";
+// import FetchData from "./FetchData";
+import FetchDataUsingAxios from "./FetchDataUsingAxios";
 
 // useEffect hook
 
@@ -18,7 +19,7 @@ import FetchData from "./FetchData";
 function App() {
     return (
         <>
-            <FetchData />
+            <FetchDataUsingAxios />
         </>
     );
 }
