@@ -1,20 +1,5 @@
-import "./App.css";
-
 import { useEffect, useState } from "react";
-
-// useEffect hook
-
-// useEffect args
-// 1. callback function
-// 2. dependency array (optional )
-
-// case 1 : useEffect without dependency array
-
-// case 2 : useEffect with dependency array
-
-// case 3 : useEffect with empty dependency array
-
-function App() {
+function LearningUseEffect() {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
     // useEffect(() => {
@@ -59,4 +44,4 @@ function App() {
     );
 }
 
-export default App;
+export default LearningUseEffect;
