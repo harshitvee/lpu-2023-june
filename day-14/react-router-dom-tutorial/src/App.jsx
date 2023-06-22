@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import SinglePost from "./pages/SinglePost";
 import {
     RouterProvider,
     createRoutesFromElements,
@@ -9,6 +10,9 @@ import {
     Route,
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
+
+// NOTE : Don't forget to install react-router-dom
+// npm install react-router-dom
 
 // http://localhost:5174/ ---> Home path
 // http://localhost:5174/about --->About path ,  Child of home path
@@ -21,6 +25,7 @@ const router = createBrowserRouter(
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="posts/:id" element={<SinglePost />} />
         </Route>
     )
 );
