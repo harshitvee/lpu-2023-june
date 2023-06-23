@@ -10,6 +10,7 @@
     --white-color: hsl(var(--hue), 64%, 90%);
     --pure-white-color: #fff;
     --black-color: hsl(var(--hue), 64%, 10%);
+    --grey-color: hsl(var(--hue), 24%, 35%);
 }
 body {
     font-family: "Inter", sans-serif;

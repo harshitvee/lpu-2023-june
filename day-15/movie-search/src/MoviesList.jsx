@@ -1,10 +1,11 @@
 import React from "react";
-
+import MovieCard from "./MovieCard";
+import styles from "./MoviesList.module.css";
 function MoviesList({ movies }) {
     return (
-        <div>
+        <div className={`container ${styles.moviesList}`}>
             {movies.map((movie) => {
-                return <p>{movie.Title}</p>;
+                return <MovieCard key={movie.imdbID} {...movie} />;
             })}
         </div>
     );
