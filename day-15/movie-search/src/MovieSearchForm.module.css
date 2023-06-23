@@ -1,0 +1,28 @@
+.form {
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    display: flex;
+    background-color: var(--pure-white-color);
+    padding: 0.5rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+}
+.form input {
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.form button {
+    width: 10%;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 0.2rem;
+}
