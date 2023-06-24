@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MovieCard.module.css";
+import { Link } from "react-router-dom";
 // Title
 // Year
 // imdbID
@@ -7,7 +8,7 @@ import styles from "./MovieCard.module.css";
 // Poster
 function MovieCard({ Title, Year, imdbID, Type, Poster }) {
     return (
-        <div className={styles.movieCard}>
+        <Link className={styles.movieCard} to="/detail">
             <img
                 src={
                     Poster === "N/A"
@@ -20,7 +21,7 @@ function MovieCard({ Title, Year, imdbID, Type, Poster }) {
             <h2 className={styles.movieTitle}>{Title}</h2>
             <h4 className={styles.movieYear}>{Year}</h4>
             <h4 className={styles.movieType}>{Type}</h4>
-        </div>
+        </Link>
     );
 }
 

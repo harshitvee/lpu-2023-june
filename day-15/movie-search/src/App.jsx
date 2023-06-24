@@ -1,33 +1,24 @@
-import { useState } from "react";
 import "./App.css";
-import LoadingSpinner from "./assets/LoadingSpinner.svg";
-// console.log(import.meta.env.VITE_API_KEY);
-import MovieSearchForm from "./MovieSearchForm";
-import MoviesList from "./MoviesList";
+import Home from "./pages/Home";
+import SingleMovieDetail from "./pages/SingleMovieDetail";
+import {
+    RouterProvider,
+    createRoutesFromElements,
+    createBrowserRouter,
+    Route,
+} from "react-router-dom";
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/detail" element={<SingleMovieDetail />} />
+        </Route>
+    )
+);
 
 function App() {
-    const [isLoading, setIsLoading] = useState(false);
-    const [movies, setMovies] = useState([]);
-    function addNewMovies(newMoviesArray) {
-        setMovies(newMoviesArray);
-    }
-    return (
-        <div>
-            <MovieSearchForm
-                addNewMovies={addNewMovies}
-                setIsLoading={setIsLoading}
-            />
-            {isLoading ? (
-                <img
-                    src={LoadingSpinner}
-                    alt="Loading..."
-                    className="loadingSpinner"
-                />
-            ) : (
-                <MoviesList movies={movies} />
-            )}
-        </div>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
