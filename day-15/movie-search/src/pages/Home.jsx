@@ -9,7 +9,9 @@ import MoviesList from "../MoviesList";
 
 function Home() {
     const [isLoading, setIsLoading] = useState(false);
+    const [isError, setIsError] = useState(false);
     const [movies, setMovies] = useState([]);
+    const [errorMessage, setErrorMessage] = useState("");
     function addNewMovies(newMoviesArray) {
         setMovies(newMoviesArray);
     }
@@ -18,6 +20,8 @@ function Home() {
             <MovieSearchForm
                 addNewMovies={addNewMovies}
                 setIsLoading={setIsLoading}
+                setIsError={setIsError}
+                setErrorMessage={setErrorMessage}
             />
             {isLoading ? (
                 <img
@@ -26,7 +30,17 @@ function Home() {
                     className="loadingSpinner"
                 />
             ) : (
-                <MoviesList movies={movies} />
+                <>
+                    {isError ? (
+                        <h1
+                            style={{ textAlign: "center", margin: "2rem auto" }}
+                        >
+                            {errorMessage}
+                        </h1>
+                    ) : (
+                        <MoviesList movies={movies} />
+                    )}
+                </>
             )}
         </div>
     );
