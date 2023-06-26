@@ -14,6 +14,7 @@ function MovieSearchForm({
         }`;
 
         setIsLoading(true);
+        setIsError(false);
         try {
             const response = await axios.get(URL);
             // Response : true / false
