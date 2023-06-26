@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // Poster
 function MovieCard({ Title, Year, imdbID, Type, Poster }) {
     return (
-        <Link className={styles.movieCard} to="/detail">
+        <Link className={styles.movieCard} to={`/detail/${imdbID}`}>
             <img
                 src={
                     Poster === "N/A"

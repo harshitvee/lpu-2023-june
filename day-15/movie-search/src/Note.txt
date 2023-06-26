@@ -1,0 +1,12 @@
+Pagination 
+Load on scroll
+
+dark mode
+navbar 
+use localstorage
+add watch list feature
+
+landing page 
+new release / upcoming movies/ trending movies 
+
+sort by year , genre 
