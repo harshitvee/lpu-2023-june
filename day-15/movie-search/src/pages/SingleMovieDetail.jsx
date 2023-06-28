@@ -10,7 +10,7 @@ function SingleMovieDetail() {
     const [isLoading, setIsLoading] = useState(true);
     const [movieDetail, setMovieDetail] = useState({});
     async function fetchMovieDetails() {
-        const URL = `https://www.omdbapi.com/?i=${imdbid}&apikey=${
+        const URL = `https://www.omdbapi.com/?i=${imdbid}&plot=full&apikey=${
             import.meta.env.VITE_API_KEY
         }`;
         try {

@@ -10,3 +10,7 @@ landing page
 new release / upcoming movies/ trending movies 
 
 sort by year , genre 
+
+
+
+// yesterday class revise 
