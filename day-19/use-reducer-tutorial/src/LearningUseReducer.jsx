@@ -14,16 +14,32 @@ import { useReducer } from "react";
 
 // const [state, disptach] = useReducer(reducer, initialState)
 
+// function reducer(state, action) {
+//     if (action.type === "INCREASE") {
+//         return state + 1;
+//     }
+//     if (action.type === "DECREASE") {
+//         return state - 1;
+//     }
+//     if (action.type === "RESET") {
+//         return 0;
+//     }
+//     throw Error("unknown action ");
+// }
+
 function reducer(state, action) {
-    if (action.type === "INCREASE") {
-        return state + 1;
+    switch (action.type) {
+        case "INCREASE": {
+            return state + 1;
+        }
+        case "RESET": {
+            return 0;
+        }
+        case "DECREASE": {
+            return state - 1;
+        }
     }
-    if (action.type === "DECREASE") {
-        return state - 1;
-    }
-    if (action.type === "RESET") {
-        return 0;
-    }
+    throw Error("unknown action: " + action.type);
 }
 
 function LearningUseReducer() {
