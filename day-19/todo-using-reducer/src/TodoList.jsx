@@ -1,10 +1,13 @@
 import React from "react";
 import Todo from "./Todo";
-function TodoList({ todos, dispatch }) {
+import { useContext } from "react";
+import { TodoContext } from "./TodoApp";
+function TodoList() {
+    const { todos } = useContext(TodoContext);
     return (
         <div>
             {todos.map((todo) => (
-                <Todo key={todo.id} {...todo} dispatch={dispatch} />
+                <Todo key={todo.id} {...todo} />
             ))}
         </div>
     );

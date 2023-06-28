@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
-function AddTodoForm({ dispatch }) {
+import { useContext } from "react";
+import { TodoContext } from "./TodoApp";
+function AddTodoForm() {
     const [title, setTitle] = useState("");
+    const { dispatch } = useContext(TodoContext);
     function handleSubmit(e) {
         e.preventDefault();
         const newTodo = {

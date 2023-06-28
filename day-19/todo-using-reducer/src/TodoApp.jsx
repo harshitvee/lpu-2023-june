@@ -1,6 +1,10 @@
 import { useReducer } from "react";
 import TodoList from "./TodoList";
 import AddTodoForm from "./AddTodoForm";
+import { createContext } from "react";
+
+const TodoContext = createContext();
+
 const initialTodos = [
     { id: 1, title: "teach students ", completed: false },
     { id: 2, title: "Work on codprog UI ", completed: false },
@@ -28,11 +32,12 @@ function reducer(todos, action) {
 function TodoApp() {
     const [todos, dispatch] = useReducer(reducer, initialTodos);
     return (
-        <>
-            <AddTodoForm dispatch={dispatch} />
-            <TodoList todos={todos} dispatch={dispatch} />
-        </>
+        <TodoContext.Provider value={{ todos: todos, dispatch: dispatch }}>
+            <AddTodoForm />
+            <TodoList />
+        </TodoContext.Provider>
     );
 }
 
 export default TodoApp;
+export { TodoContext };

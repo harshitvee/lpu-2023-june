@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Todo.module.css";
-function Todo({ id, completed, title, dispatch }) {
+import { useContext } from "react";
+import { TodoContext } from "./TodoApp";
+function Todo({ id, completed, title }) {
+    const { dispatch } = useContext(TodoContext);
     return (
         <div>
             <h2 className={completed ? styles.completed : null}>{title}</h2>
