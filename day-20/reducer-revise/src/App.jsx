@@ -9,7 +9,7 @@ import FormUsingUseRef from "./FormUsingUseRef";
 function App() {
     return (
         <>
-            <FormUsingUseRef />
+            <LearningUseEffectCleanup />
         </>
     );
 }

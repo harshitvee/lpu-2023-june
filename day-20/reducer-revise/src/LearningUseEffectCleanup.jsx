@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from "react";
+import { useReducer, useEffect, useRef } from "react";
 import "./App.css";
 
 // reducer + cotext syntax ----> (redux toolkit)
@@ -21,16 +21,26 @@ function reducer(count, action) {
 
 function LearningUseEffectCleanup() {
     const [count, dispatch] = useReducer(reducer, 0);
-    useEffect(() => {
-        function changeBackground(e) {
-            e.target.style.background = "blue";
-        }
-        document.body.addEventListener("click", changeBackground);
+    // useEffect(() => {
+    //     // function changeBackground(e) {
+    //     //     e.target.style.background = "blue";
+    //     // }
+    //     // document.body.addEventListener("click", changeBackground);
+    //     // return function () {
+    //     //     document.body.removeEventListener("click", changeBackground);
+    //     // };
+    // }, []);
 
-        return function () {
-            document.body.removeEventListener("click", changeBackground);
-        };
-    }, []);
+    // const [renderCount, setRenderCount] = useState(1);
+
+    // -------------- To display the render count----
+    const renderCount = useRef(1);
+    useEffect(() => {
+        console.log("component rendered");
+        renderCount.current = renderCount.current + 1;
+    });
+
+    // ---------------------------------------------
     return (
         <>
             <h1>{count}</h1>
@@ -55,6 +65,7 @@ function LearningUseEffectCleanup() {
             >
                 Decrese
             </button>
+            <h2>Render count : {renderCount.current}</h2>
         </>
     );
 }

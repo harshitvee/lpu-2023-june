@@ -9,10 +9,13 @@ function FormUsingUseRef() {
         // console.log(firstNameRef.current.value);
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="firstname" ref={firstNameRef} />
-            <input type="submit" value="submit" />
-        </form>
+        <>
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="firstname" ref={firstNameRef} />
+                <input type="submit" value="submit" />
+            </form>
+            <h2>Render Count : {0}</h2>
+        </>
     );
 }
 
