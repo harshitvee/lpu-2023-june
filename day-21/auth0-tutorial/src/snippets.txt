@@ -1,0 +1,22 @@
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+function UserProfile() {
+    const { isAuthenticated, user } = useAuth0();
+    // console.log(user);
+    // iterabe object
+
+    const userDetailArray = [];
+
+    for (let key in user) {
+        const userDetailPara = (
+            <p>
+                {key} : {user[key]}
+            </p>
+        );
+        userDetailArray.push(userDetailPara);
+    }
+
+    return isAuthenticated && <div>{userDetailArray}</div>;
+}
+
+export default UserProfile;

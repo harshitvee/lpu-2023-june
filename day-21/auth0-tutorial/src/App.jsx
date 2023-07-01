@@ -1,9 +1,11 @@
 import "./App.css";
-
+import Home from "./Home";
+import UserProfile from "./UserProfile";
 function App() {
     return (
         <>
-            <h1>Auth Tutorial</h1>
+            <Home />
+            <UserProfile />
         </>
     );
 }
