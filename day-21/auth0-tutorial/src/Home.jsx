@@ -7,7 +7,7 @@ function Home() {
     const { isAuthenticated } = useAuth0();
     return (
         <>
-            <h1>Auth Tutorial</h1>
+            <h1 className="text-3xl font-bold underline mb-5">Auth Tutorial</h1>
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
         </>
     );
