@@ -1,7 +1,7 @@
 import React from "react";
 import { useCart } from "../context/cartContext";
 function ProductCard({ title, price, imageUrl, id }) {
-    const { setCartItems } = useCart();
+    const { setCartItems, cartItems } = useCart();
     function addToCart() {
         const newCartItem = {
             id,

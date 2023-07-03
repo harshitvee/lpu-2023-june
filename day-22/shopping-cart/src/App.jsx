@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import { supabase } from "./config/supbase";
 import {
     Route,
     RouterProvider,
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
+    console.log("supabase", supabase);
     return (
         <>
             <RouterProvider router={router} />
