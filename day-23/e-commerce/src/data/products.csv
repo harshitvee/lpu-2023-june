@@ -1,4 +1,4 @@
-id,productName,description,price,stock,category,brand,imageUrl,startDate,endDate
+id,product_name,description,price,stock,category,brand,image_url,created_at,updated_at
 1,WirelessHeadphones,High-quality wireless headphones for immersive audio experience,1999.95,50,Electronics,AudioTech,https://example.com/images/headphones.jpg,2023-07-01T09:00,2023-07-01T14:00
 2,Smartphone,Advanced smartphone with powerful features and sleek design,59999.95,30,Electronics,TechGadgets,https://example.com/images/smartphone.jpg,2023-07-02T11:30,2023-07-02T16:30
 3,PortableBluetoothSpeaker,Compact and portable Bluetooth speaker for on-the-go music,999.95,80,Electronics,SoundMasters,https://example.com/images/speaker.jpg,2023-07-03T14:15,2023-07-03T19:15
