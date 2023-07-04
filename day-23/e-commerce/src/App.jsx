@@ -9,6 +9,8 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
+// some comment
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route element={<RootLayout />}>
