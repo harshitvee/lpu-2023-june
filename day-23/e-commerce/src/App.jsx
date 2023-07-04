@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./Pages/home";
 import Cart from "./Pages/Cart";
 import RootLayout from "./Pages/layouts/RootLayout";
+import { supabase } from "./config/supabase";
 import {
     createBrowserRouter,
     createRoutesFromElements,
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
     )
 );
 function App() {
+    console.log(supabase);
     return <RouterProvider router={router} />;
 }
 
