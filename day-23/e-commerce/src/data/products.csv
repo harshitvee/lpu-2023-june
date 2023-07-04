@@ -1,0 +1,51 @@
+id,productName,description,price,stock,category,brand,imageUrl,startDate,endDate
+1,WirelessHeadphones,High-quality wireless headphones for immersive audio experience,1999.95,50,Electronics,AudioTech,https://example.com/images/headphones.jpg,2023-07-01T09:00,2023-07-01T14:00
+2,Smartphone,Advanced smartphone with powerful features and sleek design,59999.95,30,Electronics,TechGadgets,https://example.com/images/smartphone.jpg,2023-07-02T11:30,2023-07-02T16:30
+3,PortableBluetoothSpeaker,Compact and portable Bluetooth speaker for on-the-go music,999.95,80,Electronics,SoundMasters,https://example.com/images/speaker.jpg,2023-07-03T14:15,2023-07-03T19:15
+4,PrintedTShirt,Stylish and comfortable printed t-shirt for casual wear,499.95,100,Clothing,FashionableTrends,https://example.com/images/tshirt.jpg,2023-07-04T10:45,2023-07-04T15:45
+5,WirelessKeyboard,Ergonomic wireless keyboard for efficient typing and productivity,1499.95,70,ComputerAccessories,ConnectTech,https://example.com/images/keyboard.jpg,2023-07-05T12:30,2023-07-05T17:30
+6,SmartTV,High-definition smart TV with smart features and internet connectivity,39999.95,40,Electronics,SmartHome,https://example.com/images/tv.jpg,2023-07-06T14:45,2023-07-06T19:45
+7,LeatherWallet,Premium leather wallet for storing cards and cash in style,799.95,90,Accessories,LuxuryGoods,https://example.com/images/wallet.jpg,2023-07-07T16:30,2023-07-07T21:30
+8,BluetoothSpeaker,Wireless Bluetooth speaker with rich sound quality,1299.95,60,Electronics,SoundMasters,https://example.com/images/bluetooth_speaker.jpg,2023-07-08T18:15,2023-07-08T23:15
+9,RunningShoes,Lightweight and comfortable running shoes for sports and fitness,1999.95,50,Shoes,SportsZone,https://example.com/images/running_shoes.jpg,2023-07-09T10:45,2023-07-09T15:45
+10,GamingKeyboard,Mechanical gaming keyboard with customizable RGB lighting,2499.95,30,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_keyboard.jpg,2023-07-10T12:30,2023-07-10T17:30
+11,SmartWatch,Feature-rich smartwatch with health and fitness tracking,4999.95,60,Electronics,TechGadgets,https://example.com/images/smartwatch.jpg,2023-07-11T14:45,2023-07-11T19:45
+12,DesignerSunglasses,Stylish and trendy designer sunglasses for a fashionable look,1999.95,70,Accessories,FashionBoutique,https://example.com/images/sunglasses.jpg,2023-07-12T16:30,2023-07-12T21:30
+13,WirelessMouse,Ergonomic wireless mouse for smooth and precise cursor control,799.95,80,ComputerAccessories,ConnectTech,https://example.com/images/mouse.jpg,2023-07-13T18:15,2023-07-13T23:15
+14,HDProjector,High-definition projector for an immersive home theater experience,59999.95,20,Electronics,HomeCinema,https://example.com/images/projector.jpg,2023-07-14T10:45,2023-07-14T15:45
+15,PrintedHoodie,Comfortable and trendy printed hoodie for a casual and stylish look,2999.95,50,Clothing,FashionableTrends,https://example.com/images/hoodie.jpg,2023-07-15T12:30,2023-07-15T17:30
+16,WirelessChargingPad,Convenient wireless charging pad for Qi-enabled devices,999.95,100,Electronics,PowerTech,https://example.com/images/charging_pad.jpg,2023-07-16T14:45,2023-07-16T19:45
+17,LeatherHandbag,High-quality leather handbag for a sophisticated and elegant look,4999.95,30,Accessories,LuxuryGoods,https://example.com/images/handbag.jpg,2023-07-17T16:30,2023-07-17T21:30
+18,BluetoothEarbuds,True wireless Bluetooth earbuds with noise cancellation,1999.95,80,Electronics,AudioTech,https://example.com/images/earbuds.jpg,2023-07-18T18:15,2023-07-18T23:15
+19,WirelessRouter,High-speed wireless router for seamless internet connectivity,1299.95,60,Networking,ConnectTech,https://example.com/images/router.jpg,2023-07-19T10:45,2023-07-19T15:45
+20,PrintedLeggings,Comfortable and trendy printed leggings for workout or casual wear,799.95,100,Clothing,FashionableTrends,https://example.com/images/leggings.jpg,2023-07-20T12:30,2023-07-20T17:30
+21,SmartHomeAssistant,Voice-controlled smart home assistant for home automation,2999.95,40,Electronics,SmartHome,https://example.com/images/home_assistant.jpg,2023-07-21T14:45,2023-07-21T19:45
+22,GamingHeadset,Immersive gaming headset with surround sound and microphone,2499.95,70,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_headset.jpg,2023-07-22T16:30,2023-07-22T21:30
+23,SmartSecurityCamera,Advanced smart security camera for monitoring your property,3999.95,30,HomeSecurity,SecureHome,https://example.com/images/security_camera.jpg,2023-07-23T18:15,2023-07-23T23:15
+24,BluetoothCarKit,Wireless Bluetooth car kit for hands-free calling and music streaming,1499.95,60,CarAccessories,DriveTech,https://example.com/images/car_kit.jpg,2023-07-24T10:45,2023-07-24T15:45
+25,FitnessTracker,Activity and fitness tracker for tracking your health and workouts,1999.95,50,Electronics,HealthTech,https://example.com/images/fitness_tracker.jpg,2023-07-25T12:30,2023-07-25T17:30
+26,WirelessGamingMouse,Wireless gaming mouse with high DPI and customizable buttons,1999.95,80,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_mouse.jpg,2023-07-26T14:45,2023-07-26T19:45
+27,WirelessBluetoothHeadset,Bluetooth headset for hands-free communication and audio playback,1299.95,70,Electronics,AudioTech,https://example.com/images/bluetooth_headset.jpg,2023-07-27T16:30,2023-07-27T21:30
+28,FoldableElectricScooter,Foldable electric scooter for convenient and eco-friendly transportation,29999.95,40,Scooters,GreenRides,https://example.com/images/electric_scooter.jpg,2023-07-28T18:15,2023-07-28T23:15
+29,WirelessGamingController,Wireless gaming controller for console and PC gaming,2499.95,60,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_controller.jpg,2023-07-29T10:45,2023-07-29T15:45
+30,PortableExternalHardDrive,Portable external hard drive for secure data storage and backup,1999.95,50,ComputerAccessories,ConnectTech,https://example.com/images/hard_drive.jpg,2023-07-30T12:30,2023-07-30T17:30
+31,PrintedSwimsuit,Stylish and fashionable printed swimsuit for beach and pool,1499.95,80,Clothing,FashionableTrends,https://example.com/images/swimsuit.jpg,2023-07-31T14:45,2023-07-31T19:45
+32,WirelessBluetoothSpeaker,Portable and waterproof wireless Bluetooth speaker,1299.95,70,Electronics,SoundMasters,https://example.com/images/bluetooth_speaker2.jpg,2023-08-01T16:30,2023-08-01T21:30
+33,WirelessEarphones,True wireless earphones with high-quality sound and comfortable fit,1999.95,60,Electronics,AudioTech,https://example.com/images/earphones.jpg,2023-08-02T18:15,2023-08-02T23:15
+34,PortablePowerBank,Compact and high-capacity portable power bank for charging on the go,1999.95,90,Electronics,PowerTech,https://example.com/images/power_bank.jpg,2023-08-03T10:45,2023-08-03T15:45
+35,GamingMonitor,High-performance gaming monitor with fast refresh rate and response time,29999.95,30,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_monitor.jpg,2023-08-04T12:30,2023-08-04T17:30
+36,WirelessChargingPad,Convenient wireless charging pad for Qi-enabled devices,999.95,80,Electronics,PowerTech,https://example.com/images/charging_pad2.jpg,2023-08-05T14:45,2023-08-05T19:45
+37,LeatherBriefcase,Premium leather briefcase for professional and stylish look,4999.95,50,Accessories,LuxuryGoods,https://example.com/images/briefcase.jpg,2023-08-06T16:30,2023-08-06T21:30
+38,WirelessKeyboardAndMouse,Wireless keyboard and mouse combo for comfortable and efficient typing,2499.95,40,ComputerAccessories,ConnectTech,https://example.com/images/keyboard_mouse.jpg,2023-08-07T18:15,2023-08-07T23:15
+39,SmartHomeSecuritySystem,Comprehensive smart home security system for peace of mind,39999.95,30,HomeSecurity,SecureHome,https://example.com/images/security_system.jpg,2023-08-08T10:45,2023-08-08T15:45
+40,Noise-CancelingHeadphones,High-quality noise-canceling headphones for immersive audio experience,1999.95,50,Electronics,AudioTech,https://example.com/images/noise_cancelling_headphones.jpg,2023-08-09T12:30,2023-08-09T17:30
+41,WirelessGamingKeyboard,Gaming keyboard with wireless connectivity and customizable RGB lighting,2999.95,40,ComputerAccessories,Gamer'sChoice,https://example.com/images/gaming_keyboard2.jpg,2023-08-10T14:45,2023-08-10T19:45
+42,SmartHomeHub,Smart home hub for controlling and automating your smart devices,1999.95,70,Electronics,SmartHome,https://example.com/images/home_hub.jpg,2023-08-11T16:30,2023-08-11T21:30
+43,WirelessCCTVCamera,Wireless CCTV camera for monitoring your property with remote access,3999.95,30,HomeSecurity,SecureHome,https://example.com/images/cctv_camera.jpg,2023-08-12T18:15,2023-08-12T23:15
+44,WirelessCarCharger,Wireless car charger for convenient and fast charging on the go,1299.95,80,CarAccessories,DriveTech,https://example.com/images/car_charger.jpg,2023-08-13T10:45,2023-08-13T15:45
+45,RunningShoes,Lightweight and comfortable running shoes for sports and fitness,1999.95,50,Shoes,SportsZone,https://example.com/images/running_shoes2.jpg,2023-08-14T12:30,2023-08-14T17:30
+46,SmartWatch,Feature-rich smartwatch with health and fitness tracking,4999.95,60,Electronics,TechGadgets,https://example.com/images/smartwatch2.jpg,2023-08-15T14:45,2023-08-15T19:45
+47,DesignerSunglasses,Stylish and trendy designer sunglasses for a fashionable look,1999.95,70,Accessories,FashionBoutique,https://example.com/images/sunglasses2.jpg,2023-08-16T16:30,2023-08-16T21:30
+48,BluetoothEarbuds,True wireless Bluetooth earbuds with noise cancellation,1999.95,80,Electronics,AudioTech,https://example.com/images/earbuds2.jpg,2023-08-17T18:15,2023-08-17T23:15
+49,WirelessRouter,High-speed wireless router for seamless internet connectivity,1299.95,60,Networking,ConnectTech,https://example.com/images/router2.jpg,2023-08-18T10:45,2023-08-18T15:45
+50,PrintedLeggings,Comfortable and trendy printed leggings for workout or casual wear,799.95,100,Clothing,FashionableTrends,https://example.com/images/leggings2.jpg,2023-08-19T12:30,2023-08-19T17:30
