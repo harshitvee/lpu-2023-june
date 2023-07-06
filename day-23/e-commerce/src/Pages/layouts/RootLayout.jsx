@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-
+import { useAuth } from "../../context/authContext";
 function RootLayout() {
+    const { session } = useAuth();
     return (
         <>
             <div className=" bg-zinc-100 mb-8">
@@ -14,6 +15,16 @@ function RootLayout() {
                         <li className="text-zinc-800 hover:text-zinc-600">
                             <Link to="/cart">Cart</Link>
                         </li>
+                        {session && (
+                            <li className="text-zinc-800 hover:text-zinc-600">
+                                <Link to="/profile">Profile</Link>
+                            </li>
+                        )}
+                        {!session && (
+                            <li className="text-zinc-800 hover:text-zinc-600">
+                                <Link to="/login">Login</Link>
+                            </li>
+                        )}
                     </ul>
                 </nav>
             </div>
