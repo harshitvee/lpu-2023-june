@@ -6,8 +6,10 @@ export default function Profile() {
     const { session } = useAuth();
     const [loading, setLoading] = useState(true);
     const [username, setUsername] = useState(null);
-    const [website, setWebsite] = useState(null);
-    const [avatar_url, setAvatarUrl] = useState(null);
+    const [firstName, setFirstName] = useState(null);
+    const [lastName, setLastName] = useState(null);
+    const [phone, setPhone] = useState(null);
+    const [address, setAddress] = useState(null);
 
     useEffect(() => {
         async function getProfile() {
@@ -16,7 +18,7 @@ export default function Profile() {
 
             let { data, error } = await supabase
                 .from("profiles")
-                .select(`username, website, avatar_url`)
+                .select(`first_name, last_name, username, phone, address`)
                 .eq("id", user.id)
                 .single();
 
@@ -24,8 +26,10 @@ export default function Profile() {
                 console.warn(error);
             } else if (data) {
                 setUsername(data.username);
-                setWebsite(data.website);
-                setAvatarUrl(data.avatar_url);
+                setFirstName(data.first_name);
+                setLastName(data.last_name);
+                setPhone(data.phone);
+                setAddress(data.address);
             }
 
             setLoading(false);
@@ -42,9 +46,11 @@ export default function Profile() {
 
         const updates = {
             id: user.id,
-            username,
-            website,
-            avatar_url,
+            username: username,
+            first_name: firstName,
+            last_name: lastName,
+            phone: phone,
+            address: address,
             updated_at: new Date(),
         };
 
@@ -70,7 +76,7 @@ export default function Profile() {
                 />
             </div>
             <div>
-                <label htmlFor="username">Name</label>
+                <label htmlFor="username">Username</label>
                 <input
                     id="username"
                     type="text"
@@ -80,12 +86,39 @@ export default function Profile() {
                 />
             </div>
             <div>
-                <label htmlFor="website">Website</label>
+                <label htmlFor="firstName">firstName</label>
                 <input
-                    id="website"
-                    type="url"
-                    value={website || ""}
-                    onChange={(e) => setWebsite(e.target.value)}
+                    id="firstName"
+                    type="text"
+                    value={firstName || ""}
+                    onChange={(e) => setFirstName(e.target.value)}
+                />
+            </div>
+            <div>
+                <label htmlFor="lastName">lastName</label>
+                <input
+                    id="lastName"
+                    type="text"
+                    value={lastName || ""}
+                    onChange={(e) => setLastName(e.target.value)}
+                />
+            </div>
+            <div>
+                <label htmlFor="phone">phone</label>
+                <input
+                    id="phone"
+                    type="tel"
+                    value={phone || ""}
+                    onChange={(e) => setPhone(e.target.value)}
+                />
+            </div>
+            <div>
+                <label htmlFor="address">address</label>
+                <input
+                    id="address"
+                    type="text"
+                    value={address || ""}
+                    onChange={(e) => setAddress(e.target.value)}
                 />
             </div>
 

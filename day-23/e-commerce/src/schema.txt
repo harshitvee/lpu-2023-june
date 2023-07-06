@@ -57,3 +57,20 @@ create policy "Anyone can upload an avatar." on storage.objects
 
 
 -------------- script end ---------------
+
+
+----- profile table ---------------
+
+
+username 
+fullname 
+avatar_url
+website
+
+
+
+id(user.id)
+firstname
+lastname
+address
+phone

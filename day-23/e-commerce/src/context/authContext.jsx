@@ -2,6 +2,8 @@ import { createContext, useContext, useState, useEffect } from "react";
 import { supabase } from "../config/supabase";
 const AuthContext = createContext();
 
+// serverless
+
 function AuthProvider({ children }) {
     const [session, setSession] = useState(null);
 
