@@ -64,83 +64,85 @@ export default function Profile() {
     if (!session) {
         return <Link to="/login">Login</Link>;
     }
-    return (
-        <form onSubmit={updateProfile} className="form-widget">
-            <div>
-                <label htmlFor="email">Email</label>
-                <input
-                    id="email"
-                    type="text"
-                    value={session.user.email}
-                    disabled
-                />
-            </div>
-            <div>
-                <label htmlFor="username">Username</label>
-                <input
-                    id="username"
-                    type="text"
-                    required
-                    value={username || ""}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="firstName">firstName</label>
-                <input
-                    id="firstName"
-                    type="text"
-                    value={firstName || ""}
-                    onChange={(e) => setFirstName(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="lastName">lastName</label>
-                <input
-                    id="lastName"
-                    type="text"
-                    value={lastName || ""}
-                    onChange={(e) => setLastName(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="phone">phone</label>
-                <input
-                    id="phone"
-                    type="tel"
-                    value={phone || ""}
-                    onChange={(e) => setPhone(e.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="address">address</label>
-                <input
-                    id="address"
-                    type="text"
-                    value={address || ""}
-                    onChange={(e) => setAddress(e.target.value)}
-                />
-            </div>
+    if (session?.user) {
+        return (
+            <form onSubmit={updateProfile} className="form-widget">
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input
+                        id="email"
+                        type="text"
+                        value={session.user.email}
+                        disabled
+                    />
+                </div>
+                <div>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        id="username"
+                        type="text"
+                        required
+                        value={username || ""}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="firstName">firstName</label>
+                    <input
+                        id="firstName"
+                        type="text"
+                        value={firstName || ""}
+                        onChange={(e) => setFirstName(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="lastName">lastName</label>
+                    <input
+                        id="lastName"
+                        type="text"
+                        value={lastName || ""}
+                        onChange={(e) => setLastName(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="phone">phone</label>
+                    <input
+                        id="phone"
+                        type="tel"
+                        value={phone || ""}
+                        onChange={(e) => setPhone(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="address">address</label>
+                    <input
+                        id="address"
+                        type="text"
+                        value={address || ""}
+                        onChange={(e) => setAddress(e.target.value)}
+                    />
+                </div>
 
-            <div>
-                <button
-                    className="button block primary"
-                    type="submit"
-                    disabled={loading}
-                >
-                    {loading ? "Loading ..." : "Update"}
-                </button>
-            </div>
+                <div>
+                    <button
+                        className="button block primary"
+                        type="submit"
+                        disabled={loading}
+                    >
+                        {loading ? "Loading ..." : "Update"}
+                    </button>
+                </div>
 
-            <div>
-                <button
-                    className="button block"
-                    type="button"
-                    onClick={() => supabase.auth.signOut()}
-                >
-                    Sign Out
-                </button>
-            </div>
-        </form>
-    );
+                <div>
+                    <button
+                        className="button block"
+                        type="button"
+                        onClick={() => supabase.auth.signOut()}
+                    >
+                        Sign Out
+                    </button>
+                </div>
+            </form>
+        );
+    }
 }
