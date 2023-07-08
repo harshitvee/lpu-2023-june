@@ -5,6 +5,14 @@ import { useAuth } from "../context/authContext";
 function Cart() {
     const [loading, setLoading] = useState(true);
     const { session } = useAuth();
+    async function getProduct(id) {
+        let { data, error } = await supabase
+            .from("products")
+            .select()
+            .eq("id", id)
+            .single();
+        return data;
+    }
     useEffect(() => {
         async function getCart() {
             setLoading(true);
@@ -19,6 +27,12 @@ function Cart() {
                 console.warn(error);
             } else if (data) {
                 console.log(data);
+                data.forEach((cartItem) => {
+                    // console.log(cartItem.product_id);
+                    getProduct(cartItem.product_id).then((data) =>
+                        console.log(data)
+                    );
+                });
             }
 
             setLoading(false);

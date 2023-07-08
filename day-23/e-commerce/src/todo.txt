@@ -1,0 +1,39 @@
+render cart data on screen 
+change quantity (optional)
+
+make profile page more beautiful 
+
+loading and error display
+
+javascript
+how to fetch data using fetch api
+ 
+let conts var 
+primitives types (number, string, bigInt, null, undefined, boolean ,symbol)
+reference types (array, objects, functions)
+callback functions
+arrow function 
+this keyword 
+window object 
+call , apply , bind method 
+closure 
+dom manipulation 
+event bubbeling and capturing 
+
+
+jsx is short syntax for React.createElement
+babel -> convert jsx to React.createElement (because browser does not understand jsx , it understands React.createElement) 
+props
+state 
+events (onClick, onSubmit, onChange)
+controlled input components 
+difference between controlled and uncontrolled components
+useState
+useEffect
+useReducer
+useContext
+useRef
+useParams(react-router-dom)
+
+
+tailwind classes in e-commerece project, useMemo , useCallback 
